@@ -3,7 +3,7 @@ import MobileNav from './MobileNav'
 import styles from './Header.module.css'
 
 const navLinks = [
-  { href: '#work', label: 'Work', num: '01', section: 'work' },
+  { href: '/projects', label: 'My work', num: '01', section: 'projects' },
   { href: '/about', label: 'About', num: '02', section: 'about' },
   { href: '/contact', label: 'Contact', num: '03', section: 'contact' },
 ]
