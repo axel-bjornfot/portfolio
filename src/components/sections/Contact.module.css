@@ -1,0 +1,52 @@
+/* Headline — font-variation-settings can't be expressed in Tailwind */
+.headline {
+  font-variation-settings: "opsz" 48;
+}
+
+/* Live availability dot glow */
+.liveDot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+  vertical-align: 1px;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+
+/* Email CTA — multi-layer glow box-shadow */
+.emailCta {
+  box-shadow:
+    0 0 0 1px var(--accent),
+    0 0 32px -4px rgba(0, 229, 255, 0.4),
+    0 24px 48px -16px rgba(0, 229, 255, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.emailCta:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 0 1px var(--accent),
+    0 0 48px -4px rgba(0, 229, 255, 0.4),
+    0 32px 56px -16px rgba(0, 229, 255, 0.35);
+}
+
+/* Social icon — lift + accent on hover */
+.social {
+  transition: color 0.2s, border-color 0.2s, background 0.2s, transform 0.2s;
+}
+.social:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(0, 229, 255, 0.06);
+  transform: translateY(-2px);
+}
+
+/* Footer "back to top" link */
+.topLink {
+  transition: color 0.2s;
+}
+.topLink:hover {
+  color: var(--accent);
+}

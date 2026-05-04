@@ -38,9 +38,9 @@ export default function RootLayout({
       className={`${jetbrainsMono.variable} ${bricolage.variable} ${instrumentSerif.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-          <Header />
-          {children}
-        </body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
