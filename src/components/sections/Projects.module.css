@@ -1,0 +1,138 @@
+.title {
+  font-variation-settings: "opsz" 48;
+}
+
+/* Card hover */
+.card {
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+  box-shadow:
+    0 0 0 1px var(--accent),
+    0 0 32px -4px rgba(0, 217, 255, 0.4),
+    0 24px 48px -16px rgba(0, 0, 0, 0.6);
+  transform: translateY(-2px);
+}
+.card:hover .tick {
+  opacity: 1;
+  transform: translateX(0);
+}
+.card:hover .thumbGlow {
+  opacity: 1;
+}
+
+.tick {
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  color: var(--accent);
+  font-size: 22px;
+  line-height: 1;
+}
+
+/* Thumb glow overlay on hover */
+.thumbGlow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 217, 255, 0.4), transparent 65%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+/* Scanline overlay */
+.scan {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 100% 4px;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+/* thumb-grid: cyan grid bg + big letter */
+.thumbGrid::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(0, 217, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 217, 255, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(ellipse at center, black 25%, transparent 75%);
+}
+
+.thumbGrid .centerNum {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-variation-settings: "opsz" 48;
+  font-size: 92px;
+  letter-spacing: -0.06em;
+  color: var(--ink);
+  opacity: 0.95;
+}
+
+/* thumb-bars: bar chart */
+.thumbBars {
+  background: linear-gradient(135deg, #0c1119 0%, #161c2a 100%);
+}
+
+/* thumb-doc: text-line abstraction */
+.thumbDoc {
+  background: linear-gradient(180deg, #0a0e16 0%, #131724 100%);
+}
+
+/* thumb-orb: glowing sphere */
+.thumbOrb {
+  background: radial-gradient(ellipse 100% 100% at 30% 80%, #11293c 0%, #0a0e16 60%, #06080d 100%);
+}
+.orb {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, var(--accent) 0%, #0066aa 30%, #0a0e16 70%);
+  box-shadow: 0 0 80px rgba(0, 217, 255, 0.4);
+}
+.ring {
+  position: absolute;
+  inset: 30px;
+  border: 1px dashed rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+}
+
+/* Icon link hover */
+.iconLink {
+  transition: color 0.18s, border-color 0.18s, background 0.18s;
+}
+.iconLink:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(0, 217, 255, 0.06);
+}
+
+/* More row */
+.moreRow {
+  transition: color 0.2s;
+}
+.moreRow:hover {
+  color: var(--accent);
+}
+.moreRow .arrow {
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+.moreRow:hover .arrow {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--bg);
+}
