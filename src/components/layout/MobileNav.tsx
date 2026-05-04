@@ -6,7 +6,7 @@ import styles from './Header.module.css'
 
 const links = [
   { href: '#work', label: 'Work', num: '01', section: 'work' },
-  { href: '#about', label: 'About', num: '02', section: 'about' },
+  { href: '/about', label: 'About', num: '02', section: 'about' },
   { href: '/contact', label: 'Contact', num: '03', section: 'contact' },
 ]
 
