@@ -146,7 +146,7 @@ export default function Hero() {
 
           {/* Tagline */}
           <p className="mt-[22px] font-display font-normal text-[18px] leading-[1.4] tracking-[-0.01em] text-ink max-w-[320px]">
-            Building <span className="text-accent border-b border-accent pb-px">opinionated</span>,
+            Building <span className="text-accent border-b border-accent">opinionated</span>,
             fast things for the&nbsp;web.
           </p>
 
