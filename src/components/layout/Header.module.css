@@ -1,0 +1,101 @@
+/* Nav link underline animation */
+.navLink {
+  position: relative;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+.navLink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: right 0.3s ease;
+}
+.navLink:hover,
+.navLink.active {
+  color: var(--accent);
+}
+.navLink:hover::after,
+.navLink.active::after {
+  right: 0;
+}
+.navLink.active .num {
+  color: var(--accent-deep);
+}
+
+/* Pulsing availability indicator */
+@keyframes ping {
+  0% { transform: scale(0.6); opacity: 0.5; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+.pulse {
+  position: relative;
+}
+.pulse::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background: #4ade80;
+  opacity: 0.3;
+  animation: ping 2s ease-out infinite;
+}
+
+/* Hamburger → X */
+.hamburger span {
+  display: block;
+  height: 1.6px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition:
+    transform 0.32s cubic-bezier(0.7, 0, 0.2, 1),
+    width 0.32s cubic-bezier(0.7, 0, 0.2, 1),
+    opacity 0.2s;
+}
+.hamburger.open span {
+  width: 22px !important;
+}
+.hamburger.open span:nth-child(1) {
+  transform: translateY(4px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+/* Drawer slide-in */
+.backdrop {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.32s ease;
+}
+.backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.drawer {
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.7, 0, 0.2, 1);
+}
+.drawer.open {
+  transform: translateX(0);
+}
+
+/* Drawer link hover */
+.drawerLink {
+  transition: color 0.2s, padding-left 0.3s ease;
+}
+.drawerLink:hover,
+.drawerLink.active {
+  color: var(--accent);
+  padding-left: 8px;
+}
+.drawerLink .num {
+  transition: color 0.2s;
+}
+.drawerLink:hover .num,
+.drawerLink.active .num {
+  color: var(--accent);
+}
