@@ -23,13 +23,13 @@ export default function Contact() {
   return (
     <>
       {/* ── Desktop ≥900px ── */}
-      <div className="hidden min-[900px]:flex flex-col min-h-[calc(100vh-73px)]">
+      <div className="hidden min-[900px]:flex flex-col">
         <section className="flex-1 px-24 pt-[120px] pb-20 grid grid-cols-[1.4fr_1fr] gap-16 items-end max-w-[1600px] mx-auto w-full">
 
           {/* Left — headline */}
           <div>
             <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.22em] uppercase text-ink-dim mb-6">
-              <span className="text-accent">04</span>
+              <span className="text-accent">03</span>
               <span>—</span>
               <span>Get in touch</span>
             </div>
@@ -81,7 +81,7 @@ export default function Contact() {
 
         <footer className="px-24 py-6 border-t border-rule flex justify-between items-center font-mono text-[11px] tracking-[0.18em] uppercase text-ink-dim max-w-[1600px] mx-auto w-full">
           <span>© 2026 Axel Björnfot</span>
-          <span>Stockholm — Remote</span>
+          <span>Malmö — Remote</span>
           <a href="#top" className={`text-ink-dim no-underline flex items-center gap-2 ${styles.topLink}`}>
             Back to top
             <ArrowUpIcon />

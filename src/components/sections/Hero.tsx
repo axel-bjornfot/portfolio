@@ -2,8 +2,8 @@ import Link from 'next/link'
 import styles from './Hero.module.css'
 
 const marqueeItems = [
-  'Selected Work', 'Frontend Engineering', 'Design Systems',
-  'Interactive Prototypes', 'Type-driven Interfaces',
+    'Frontend Engineering', 'React & TypeScript', 'Design Systems',
+    'API Integration', 'E-Commerce Solutions', 'AI-Powered Tools',
 ]
 
 export default function Hero() {
@@ -35,10 +35,10 @@ export default function Hero() {
 
               {/* Display name */}
               <h1 className={`font-serif font-normal leading-[0.86] tracking-[-0.04em] text-ink mb-2 relative ${styles.displayName}`}>
-                <span className={styles.nameDecor}>
+                {/* <span className={styles.nameDecor}>
                   <span className={styles.nameDecorNum}><em>17</em>/projects</span>
                   <span>shipped this year</span>
-                </span>
+                </span> */}
                 <span className="block">Axel</span>
                 <span className={`block italic pl-[clamp(80px,12vw,180px)]`}>
                   Björnfot<span className="text-accent not-italic">.</span>
@@ -54,20 +54,20 @@ export default function Hero() {
                   ˈbjœːɳˌfuːt
                 </div>
                 <div className="text-xs tracking-[0.12em] uppercase text-ink-dim">
-                  Est. 2014 — Sthlm ↔ Remote
+                  Est. 2022 — Malmö ↔ Remote
                 </div>
               </div>
 
               {/* Tagline + CTA */}
               <div className="grid grid-cols-[1.2fr_1fr] gap-20 mt-16 items-end">
                 <p className={`font-serif leading-[1.15] tracking-[-0.01em] text-ink max-w-[560px] text-[clamp(28px,2.8vw,38px)]`}>
-                  Building <em className="text-accent italic">fast, opinionated</em> things for the
-                  web — interfaces, tools, and the occasional weekend experiment
+                  Building <em className="text-accent italic">fast, purposeful</em> things for the web — interfaces, tools, 
+                  and the occasional weekend experiment.
                   <span className={styles.cursor} />
                 </p>
 
                 <div className="flex flex-col gap-5 items-start">
-                  <Link href="#work" className={styles.cta}>
+                  <Link href="/projects" className={styles.cta}>
                     <span>See my work</span>
                     <span className={styles.ctaArrow} />
                   </Link>
@@ -81,8 +81,8 @@ export default function Hero() {
             {/* Right rail */}
             <div className="flex flex-col items-end justify-between gap-[200px]">
               <div className="text-[11px] text-ink-dim tracking-[0.2em] text-right leading-[1.8]">
-                <div>N <strong className="text-ink font-medium">59.33°</strong></div>
-                <div>E <strong className="text-ink font-medium">18.06°</strong></div>
+                <div>N <strong className="text-ink font-medium">55.36°</strong></div>
+                <div>E <strong className="text-ink font-medium">13.00°</strong></div>
               </div>
               <div className="text-[11px] text-ink-dim tracking-[0.2em] text-right leading-[1.8]">
                 <div>SCROLL</div>
@@ -154,7 +154,7 @@ export default function Hero() {
 
           {/* CTA */}
           <Link
-            href="#work"
+            href="/projects"
             className="mt-8 flex items-center justify-between text-ink no-underline"
           >
             <span className="font-display font-medium text-2xl tracking-[-0.02em]">See my work</span>
