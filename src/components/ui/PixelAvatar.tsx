@@ -12,12 +12,12 @@ const ART = [
   "....CKBSSSSSSSSBKC....",
   "....CKSSSSSSSSSSKC....",
   "....CKSGGGSSGGGSKC....",
-  "....CKSGCEGSGCEGSKC...",
-  ".....KSGGGSSGGGSK.....",
-  "......SSSSSSSSSS......",
-  "......SSDDMMDDSS......",
-  ".......SDDDDDDS.......",
-  "........SSSSSS........",
+  "....CKGGCEGGGCEGKC....",
+  ".....KBGGGSSGGGBK.....",
+  "......BSSSSSSSSB......",
+  "......BBBDMMDBBB......",
+  ".......BBDDDDBB.......",
+  "........BBBBBB........",
   "........TTTTTT........",
   ".......TUTTUTTT.......",
   "......TTUTTTUTTT......",
@@ -26,7 +26,7 @@ const ART = [
 ]
 
 const PALETTE: Record<string, string> = {
-  B: '#1a1410', H: '#2a2018', S: '#e8c39c', D: '#b48560',
+  B: '#C79A4A', H: '#E8C66B', S: '#e8c39c', D: '#B48560',
   M: '#7a3a2a', T: '#0a0e16', U: '#1a2238', G: '#0a0e16',
   C: '#00d9ff', W: '#ffffff', E: '#0a0e16', K: '#2a2f3a',
 }

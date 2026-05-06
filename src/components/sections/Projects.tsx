@@ -228,7 +228,7 @@ export default function Projects() {
       {/* ── Desktop ≥900px ── */}
       <div className="hidden min-[900px]:block px-20 pt-20 pb-24 max-w-[1600px] mx-auto w-full">
         <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.22em] uppercase text-ink-dim mb-4">
-          <span className="text-accent">02</span>
+          <span className="text-accent">01</span>
           <span>—</span>
           <span>Selected work</span>
         </div>
@@ -245,18 +245,18 @@ export default function Projects() {
         <div className="grid grid-cols-2 gap-8 mt-9">
           {projects.map(p => <ProjectCard key={p.slug} project={p} desktop />)}
         </div>
-        <a href="#archive" className={`mt-8 py-[18px] border-t border-b border-rule flex justify-between items-center font-mono text-[11px] tracking-[0.16em] uppercase text-ink no-underline ${styles.moreRow}`}>
+        {/* <a href="#archive" className={`mt-8 py-[18px] border-t border-b border-rule flex justify-between items-center font-mono text-[11px] tracking-[0.16em] uppercase text-ink no-underline ${styles.moreRow}`}>
           <span>↓ View archive</span>
           <span className="w-7 h-7 rounded-full border border-ink-faint flex items-center justify-center">
             <ArrowIcon />
           </span>
-        </a>
+        </a> */}
       </div>
 
       {/* ── Mobile <900px ── */}
       <div className="flex min-[900px]:hidden flex-col px-[22px] pt-2 pb-14">
         <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.22em] uppercase text-ink-dim mb-4">
-          <span className="text-accent">02</span>
+          <span className="text-accent">01</span>
           <span>—</span>
           <span>Selected work</span>
         </div>
@@ -273,12 +273,12 @@ export default function Projects() {
         <div className="flex flex-col gap-7">
           {projects.map(p => <ProjectCard key={p.slug} project={p} />)}
         </div>
-        <a href="#archive" className={`mt-8 py-[18px] border-t border-b border-rule flex justify-between items-center font-mono text-[11px] tracking-[0.16em] uppercase text-ink no-underline ${styles.moreRow}`}>
+        {/* <a href="#archive" className={`mt-8 py-[18px] border-t border-b border-rule flex justify-between items-center font-mono text-[11px] tracking-[0.16em] uppercase text-ink no-underline ${styles.moreRow}`}>
           <span>↓ View archive</span>
           <span className={`w-7 h-7 rounded-full border border-ink-faint flex items-center justify-center`}>
             <ArrowIcon />
           </span>
-        </a>
+        </a> */}
       </div>
     </>
   )

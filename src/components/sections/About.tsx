@@ -120,7 +120,7 @@ export default function About() {
       {/* ── Desktop ≥900px ── */}
       <div className="hidden min-[900px]:block px-20 pt-20 pb-24 max-w-[1600px] mx-auto w-full">
         <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.22em] uppercase text-ink-dim mb-[18px]">
-          <span className="text-accent">03</span>
+          <span className="text-accent">02</span>
           <span>—</span>
           <span>About me</span>
         </div>
@@ -169,7 +169,7 @@ export default function About() {
         </h1>
 
         <p className="font-display text-[16px] leading-[1.55] text-ink mb-2">
-          I&apos;m a software developer based in Stockholm, building{' '}
+          I&apos;m a software developer based in Malmö, building{' '}
           <em className="not-italic text-accent font-medium">fast, opinionated</em> products for the web — interfaces, design systems, and developer tools.
         </p>
         <p className="font-display text-[16px] leading-[1.55] text-ink-dim">
