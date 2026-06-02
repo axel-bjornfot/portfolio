@@ -29,8 +29,6 @@ export default function Contact() {
           {/* Left — headline */}
           <div>
             <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.22em] uppercase text-ink-dim mb-6">
-              <span className="text-accent">03</span>
-              <span>—</span>
               <span>Get in touch</span>
             </div>
 
@@ -94,8 +92,6 @@ export default function Contact() {
         <section className="flex-1 flex flex-col items-center text-center pt-4">
 
           <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.22em] uppercase text-ink-dim mb-9">
-            <span className="text-accent">04</span>
-            <span>—</span>
             <span>Get in touch</span>
           </div>
 

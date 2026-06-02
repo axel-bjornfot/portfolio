@@ -67,8 +67,8 @@ export default function Hero() {
                 </p>
 
                 <div className="flex flex-col gap-5 items-start">
-                  <Link href="/projects" className={styles.cta}>
-                    <span>See my work</span>
+                  <Link href="#about" className={styles.cta}>
+                    <span>About me</span>
                     <span className={styles.ctaArrow} />
                   </Link>
                   <Link href="mailto:axelbjornfot@gmail.com" className={styles.ctaSecondary}>
@@ -85,8 +85,6 @@ export default function Hero() {
                 <div>E <strong className="text-ink font-medium">13.00°</strong></div>
               </div>
               <div className="text-[11px] text-ink-dim tracking-[0.2em] text-right leading-[1.8]">
-                <div>SCROLL</div>
-                <div><strong className="text-ink font-medium">↓ 04</strong></div>
               </div>
             </div>
           </div>
@@ -109,10 +107,8 @@ export default function Hero() {
         </section>
 
         {/* Scroll hint */}
-        <div className="flex justify-between items-center px-[clamp(32px,4.5vw,64px)] pt-7 pb-16 text-[11px] tracking-[0.2em] uppercase text-ink-dim">
-          <span>Next — 01 / Selected Projects</span>
+        <div className="flex justify-center items-center px-[clamp(32px,4.5vw,64px)] pt-7 pb-16 text-[11px] tracking-[0.2em] uppercase text-ink-dim">
           <span className={styles.scrollArrowDown} />
-          <span>2026 — Index</span>
         </div>
       </div>
 
@@ -146,18 +142,18 @@ export default function Hero() {
 
           {/* Tagline */}
           <p className="mt-[22px] font-display font-normal text-[18px] leading-[1.4] tracking-[-0.01em] text-ink max-w-[320px]">
-            Building <span className="text-accent border-b border-accent">opinionated</span>,
-            fast things for the&nbsp;web.
+            Building <em className="text-accent italic">fast, purposeful</em> things for the web — interfaces, tools, 
+            and the occasional weekend experiment.
           </p>
 
           <div className="flex-1 min-h-6" />
 
           {/* CTA */}
           <Link
-            href="/projects"
+            href="#about"
             className="mt-8 flex items-center justify-between text-ink no-underline"
           >
-            <span className="font-display font-medium text-2xl tracking-[-0.02em]">See my work</span>
+            <span className="font-display font-medium text-2xl tracking-[-0.02em]">About me</span>
             <span className="w-[60px] h-[60px] rounded-full bg-accent text-bg flex items-center justify-center shadow-[0_0_28px_rgba(0,229,255,0.55)]">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <path
@@ -173,7 +169,7 @@ export default function Hero() {
 
           {/* Footer row */}
           <div className="mt-[22px] pt-[18px] border-t border-rule flex justify-between items-center font-mono text-[10px] tracking-[0.18em] uppercase text-ink-dim">
-            <span>Next — Projects</span>
+            <span>Next — About</span>
             <span className="text-accent">↓ 01 / 06</span>
           </div>
         </section>

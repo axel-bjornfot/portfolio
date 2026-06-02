@@ -43,16 +43,6 @@ const skills = [
     ),
   },
   {
-    label: 'Postgres',
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.4">
-        <ellipse cx="14" cy="7" rx="9" ry="3.5" />
-        <path d="M5 7v7c0 2 4 3.5 9 3.5s9-1.5 9-3.5V7" />
-        <path d="M5 14v7c0 2 4 3.5 9 3.5s9-1.5 9-3.5v-7" />
-      </svg>
-    ),
-  },
-  {
     label: 'Git',
     icon: (
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.4">
@@ -95,7 +85,6 @@ function SkillsGrid({ cols }: { cols: 3 | 6 }) {
     <div className="mt-7 pt-5 border-t border-rule">
       <div className="flex justify-between items-center font-mono text-[10px] tracking-[0.22em] uppercase text-ink-dim mb-[18px]">
         <span>Stack — daily drivers</span>
-        <span className="text-ink">06</span>
       </div>
       <div className={`grid gap-3 ${cols === 6 ? 'grid-cols-6' : 'grid-cols-3'}`}>
         {skills.map(({ label, icon }) => (
@@ -120,7 +109,6 @@ export default function About() {
       {/* ── Desktop ≥900px ── */}
       <div className="hidden min-[900px]:block px-20 pt-20 pb-24 max-w-[1600px] mx-auto w-full">
         <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.22em] uppercase text-ink-dim mb-[18px]">
-          <span className="text-accent">02</span>
           <span>—</span>
           <span>About me</span>
         </div>
@@ -136,11 +124,14 @@ export default function About() {
             </h1>
 
             <p className="font-display text-[18px] leading-[1.55] text-ink mb-2">
-              I&apos;m a software developer based in Malmö, building{' '}
-              <em className="not-italic text-accent font-medium">fast, opinionated</em> products for the web — interfaces, design systems, and developer tools.
+              I&apos;m a frontend developer based in Malmö. I build 
+               purposeful things for the web — <em className="not-italic text-accent font-medium">interfaces, design systems, </em>
+              and the occasional tool nobody asked for but everyone ends up using.
             </p>
             <p className="font-display text-[18px] leading-[1.55] text-ink-dim">
-              Four years deep in frontend engineering, equally at home in a TypeScript monorepo or pushing pixels in Figma. I care most about building fast, opinionated products for the web.
+              Four years in, mostly React and TypeScript. I like clean architecture, 
+              APIs that actually make sense, and UI that holds up when things get 
+              complicated — whether that&apos;s a big e-commerce build or something I started on a Friday night.
             </p>
 
             <SkillsGrid cols={6} />
@@ -154,7 +145,6 @@ export default function About() {
       {/* ── Mobile <900px ── */}
       <div className="flex min-[900px]:hidden flex-col px-[22px] pt-2 pb-14">
         <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.22em] uppercase text-ink-dim mb-4">
-          <span className="text-accent">03</span>
           <span>—</span>
           <span>About me</span>
         </div>

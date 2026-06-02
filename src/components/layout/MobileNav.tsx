@@ -5,9 +5,8 @@ import Link from 'next/link'
 import styles from './Header.module.css'
 
 const links = [
-  { href: '/projects', label: 'My work', num: '01', section: 'projects' },
-  { href: '/about', label: 'About', num: '02', section: 'about' },
-  { href: '/contact', label: 'Contact', num: '03', section: 'contact' },
+  { href: '#about', label: 'About', num: '01', section: 'about' },
+  { href: '#contact', label: 'Contact', num: '02', section: 'contact' },
 ]
 
 export default function MobileNav() {
